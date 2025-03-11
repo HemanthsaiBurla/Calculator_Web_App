@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2 style="text-align: right;">Calculater</h2>
+
+        <div class="history-container">
+            <button id="history-btn" title="Show History">↺</button>
+            <div id="history-box"></div>
+            <button id="clear-history-btn">Clear History</button> <!-- Correct placement -->
+
+        </div>
+        <input type="text" id="screen" class="calculator-screen" disabled />
+        <div id="result" class="total">= Total</div>
+        <div class="calculator-keys">
+             
+            <button id="clear" title="All Clear">AC</button>
+            <button id="backspace" title="Backspace">⌫</button>
+            <button value="%" title="Percentage">%</button>
+            <button class="operator" value="/" title="Division">÷</button>
+
+            <button value="7" title="7">7</button>
+            <button value="8" title="8">8</button>
+            <button value="9" title="9">9</button>
+            <button class="operator" value="*" title="Multiplication">×</button>
+
+
+            <button value="4" title="4">4</button>
+            <button value="5" title="5">5</button>
+            <button value="6" title="6">6</button>
+            <button class="operator" value="-" title="Subtraction">−</button>
+
+
+            <button value="1" title="1">1</button>
+            <button value="2" title="2">2</button>
+            <button value="3" title="3">3</button>
+            <button class="operator" value="+" title="Addition">+</button>
+
+            <button class="operator" onclick="openConverter()" title="Converter">⮀</button>
+            <button value="0" title="0">0</button>
+            <button value="." title=".">.</button>
+            <button id="equals" title="Equal">=</button>
+
+            <script>
+                function openConverter() {
+                    window.location.href = "converter.html"; // Redirects to the converter page
+                }
+            </script>
+
+        </div>
+
+
+        <!-- <button id="history-btn" style="width: 73px;">↺</button> -->
+        <div id="history-box" class="history"></div>
+        <button id="clear-history-btn" style="margin: 5px; padding-top: 0px;">clear</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

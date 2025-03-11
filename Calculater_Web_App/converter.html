@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Using the same CSS -->
+    <style>
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+        }
+
+        .back-button {
+    background: #e0e1e6;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+        body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+
+        .back-button:hover {
+            background: #d6d6d6;
+            transform: scale(1.1);
+        }
+
+        .header-title {
+            flex-grow: 1;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .calculator-keys {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .operator {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #ff9800;
+            color: white;
+            transition: transform 0.2s ease-in-out;
+            text-align: center;
+        }
+
+        .operator:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator"> <!-- Keeping the same structure -->
+
+        <div class="header-container">
+            <button onclick="goBack()" class="back-button" title="Back to Calculator">←</button>
+        </div>
+        <h2 class="header-title" style="text-align: center; padding-bottom: 20px;">Converter</h2>
+        
+        <div class="calculator-keys">
+            <button class="operator" onclick="openDateConverter()" title="Date Calculation">📅 Date</button>
+            <button class="operator" onclick="openLengthConverter()" title="Length Calculation">📏 Length</button>
+            <button class="operator" onclick="openTimeConverter()" title="Time Calculation">⏳ Time</button>
+            <button class="operator" onclick="openSpeedConverter()" title="Speed Calculation">🚀 Speed</button>
+            <button class="operator" onclick="openMassConverter()" title="Mass Calculation">⚖️ Mass</button>
+            <button class="operator" onclick="openDataConverter()" title="Data Conversion">💾 Data</button>
+            <button class="operator" onclick="openTemperatureConverter()" title="Temperature Conversion">🌡️ Temp</button>
+            <button class="operator" onclick="openDiscountCalculator()" title="Discount Calculation">💲 Discount</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "index.html"; // Ensure index.html is in the same directory
+        }
+    
+        function openDateConverter() {
+            window.location.href = "date_converter.html"; 
+        }
+    
+        function openLengthConverter() {
+            window.location.href = "length_converter.html"; 
+        }
+
+        function openTimeConverter() {
+            window.location.href = "time_converter.html"; 
+        }
+
+        function openSpeedConverter() {
+            window.location.href = "speed_converter.html"; 
+        }
+
+        function openMassConverter() {
+            window.location.href = "mass_converter.html"; 
+        }
+
+        function openDataConverter() {
+            window.location.href = "data_converter.html"; 
+        }
+
+        function openTemperatureConverter() {
+            window.location.href = "temperature_converter.html"; 
+        }
+
+        function openDiscountCalculator() {
+            window.location.href = "discount_calculator.html"; 
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgb(0, 57, 243) 0%, rgb(14, 14, 14) 100%);
+}
+
+.calculator {
+    width: 320px;
+    padding: 20px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.back-button {
+    background: #e0e1e6;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.back-button:hover {
+    background: #d6d6d6;
+    transform: scale(1.1);
+}
+
+.header-title {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.calculator-screen {
+    width: 95%;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.total {
+    text-align: right;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#switch-btn {
+    width: 20%;
+    height: 40px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    background-color: #e0e1e6;
+    border-radius: 13px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
+}
+
+button#convert-btn {
+    background-color: #ff9800;
+    color: white;
+}
+/* AC button spans 2 rows & its height is increased */
+#clear {
+    grid-row: span 2;
+    height: 110px; /* Increased height */
+    background-color: #f44336;
+    color: white;
+}
+
+/* Backspace button spans 2 rows & its height is increased */
+#backspace {
+    grid-row: span 2;
+    height: 110px; /* Increased height */
+    background-color: #ff9800;
+    color: white;
+}

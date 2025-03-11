@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgb(0, 243, 57) 0%, rgb(14, 14, 14) 100%);
+}
+
+.calculator {
+    width: 320px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+/* AC button spans 2 rows & its height is increased */
+#clear {
+    grid-row: span 2;
+    height: 110px; /* Increased height */
+    background-color: #f44336;
+    color: white;
+}
+
+/* Backspace button spans 2 rows & its height is increased */
+#backspace {
+    grid-row: span 2;
+    height: 110px; /* Increased height */
+    background-color: #ff9800;
+    color: white;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.calculator-screen, .total {
+    width: 50%;
+    height: 40px;
+    font-size: 1.2rem;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.total {
+    line-height: 40px;
+    background: #f1f1f1;
+}
+
+.save-message {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: red;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    background-color: #e0e1e6;
+    border-radius: 13px;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* AC button spans 2 rows (7-8-9 & 4-5-6) */
+#clear {
+    grid-row: span 2;
+    background-color: #f44336;
+    color: white;
+}
+
+/* Backspace button spans 2 rows (1-2-3 & 00-0-.) */
+#backspace {
+    grid-row: span 2;
+    background-color: #ff9800;
+    color: white;
+}
+
+.back-button {
+    background: #e0e1e6;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}

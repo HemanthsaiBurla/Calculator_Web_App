@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Converter</title>
+    <link rel="stylesheet" href="mass_style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header-container">
+            <button onclick="goBack()" class="back-button" title="Back">←</button>
+        </div>
+        <h2 style="text-align: center;">Mass</h2>
+
+
+        <input type="text" id="massInput" class="calculator-screen" placeholder="0" oninput="convertMass()">
+        <div class="total" id="massResult">0</div>
+
+        <div class="switch-container">
+            <button id="switch-btn" onclick="switchConversion()">⇅</button>
+            <select id="conversionType" onchange="convertMass()">
+                <option value="kg-g">Kilograms to Grams</option>
+                <option value="g-kg">Grams to Kilograms</option>
+                <option value="kg-lb">Kilograms to Pounds</option>
+                <option value="lb-kg">Pounds to Kilograms</option>
+                <option value="g-mg">Grams to Milligrams</option>
+                <option value="mg-g">Milligrams to Grams</option>
+            </select>
+        </div>
+
+        <!-- <button id="convert-btn" onclick="convertMass()">Convert</button> -->
+
+       
+
+
+        <div class="calculator-keys">
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button id="clear" onclick="clearInput()">AC</button> <!-- AC button spans 2 rows -->
+        
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button id="backspace" onclick="deleteLast()">⌫</button> <!-- Backspace button spans 2 rows -->
+        
+            <button onclick="appendNumber('00')">00</button>
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="appendDot()">.</button>
+        </div>
+    </div>
+
+    <script src="mass_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="stylesheet" href="discount_style.css">
+</head>
+<body>
+    <div class="calculator">
+        <button onclick="goBack()" class="back-button" title="Back to Converter">←</button>
+
+        <h2 style="text-align: center;">Discount</h2>
+
+        <div class="input-container">
+            <label>Original Price</label>
+            <input type="text" id="original-price" class="calculator-screen" value="0" oninput="calculateDiscount()" />
+        </div>
+
+        <div class="input-container">
+            <label>Discount (%)</label>
+            <input type="text" id="discount-percent" class="calculator-screen" value="0" oninput="calculateDiscount()" />
+        </div>
+
+        <div class="input-container">
+            <label>Final Price</label>
+            <div id="final-price" class="total">0</div>
+        </div>
+
+        
+
+        <div class="save-message">
+            <span id="you-save-text">You save ₹0</span>
+        </div>
+
+        <div class="calculator-keys">
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button id="clear" onclick="clearScreen()">AC</button> <!-- AC button spans 2 rows -->
+        
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button id="backspace" onclick="backspace()">⌫</button> <!-- Backspace button spans 2 rows -->
+        
+            <button onclick="appendNumber('00')">00</button>
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="appendDot()">.</button>
+        </div>
+        
+    </div>
+
+    <script src="discount_script.js"></script>
+</body>
+</html>
