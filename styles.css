@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:radial-gradient(circle, rgb(0, 57, 243) 0%, rgb(0, 0, 0) 100%);
+}
+
+.calculator {
+    width: 320px;
+    padding: 20px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#history-btn {
+    width: 22.7%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+#clear-history-btn {
+    width:40%;
+    height: 30px;
+    background-color: #f44336;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+    margin-bottom: 10px;
+}
+
+#history-box {
+    display: none;
+    width: 93.5%;
+    background: #eee;
+    padding: 10px;
+    max-height: 120px;
+    overflow-y: auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.calculator-screen {
+    width: 95%;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.total {
+    text-align: right;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    background-color: #e0e1e6;
+    border-radius: 13px;
+}
+/* Button Hover Effect */
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Button Press Effect */
+button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Smooth Input Screen Animation */
+#screen {
+    transition: all 0.2s ease-in-out;
+}
+
+/* History Box Smooth Toggle */
+#history-box {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* History Box Fade-in Effect */
+#history-box.show {
+    opacity: 1;
+}
+
+#history-box.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+button.operator {
+    background-color: #ff9800;
+    color: white;
+}
+
+button#equals {
+    background-color: #ff9800;
+    color: white;
+    border-radius: 13px;
+    height: 50px;
+    width: 100%;
+}
+
+button#clear {
+    background-color: #f44336;
+    color: white;
+}
+
+.history {
+    margin-top: 10px;
+    background: #eee;
+    padding: 5px;
+    display: none;
+}
