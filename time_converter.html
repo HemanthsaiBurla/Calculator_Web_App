@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="time_style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header-container">
+            <button onclick="goBack()" class="back-button" title="Back">←</button>
+            <h2 class="header-title" style="text-align: center;">Time</h2>
+        </div>
+
+        <input type="text" id="time-input" class="calculator-screen" placeholder="0" oninput="convertTime()" readonly>
+
+        <div class="total">
+            <span id="time-result">0 </span>
+        </div>
+
+        <div class="switch-container">
+            <button id="switch-btn" onclick="switchConversion()">⇅</button>
+            <select id="conversionType" onchange="convertTime()">
+                <option value="sec-min">Seconds to Minutes</option>
+                <option value="min-sec">Minutes to Seconds</option>
+                <option value="min-hour">Minutes to Hours</option>
+                <option value="hour-min">Hours to Minutes</option>
+                <option value="hour-day">Hours to Days</option>
+                <option value="day-hour">Days to Hours</option>
+            </select>
+        </div>
+
+        <div class="calculator-keys">
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button id="clear" onclick="clearInput()">AC</button> <!-- AC button spans 2 rows -->
+        
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button id="backspace" onclick="deleteLast()">⌫</button> <!-- Backspace button spans 2 rows -->
+        
+            <button onclick="appendNumber('00')">00</button>
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="appendDot()">.</button>
+        </div>
+    </div>
+
+    <script src="time_script.js"></script>
+</body>
+</html>

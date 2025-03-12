@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Converter</title>
+    <link rel="stylesheet" href="data_style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header-container">
+            <button onclick="goBack()" class="back-button" title="Back">←</button>
+        </div>
+        <h2 style="text-align: center;">Data</h2>
+
+        <input type="text" id="dataInput" class="calculator-screen" placeholder="0" oninput="convertData()">
+        
+        <div class="total" id="dataResult">0</div>
+
+
+        <div class="switch-container">
+            <button id="switch-btn" onclick="switchConversion()">⇅</button>
+            <select id="conversionType" onchange="convertData()">
+                <option value="byte-kb">Bytes to Kilobytes</option>
+                <option value="kb-byte">Kilobytes to Bytes</option>
+                <option value="kb-mb">Kilobytes to Megabytes</option>
+                <option value="mb-kb">Megabytes to Kilobytes</option>
+                <option value="mb-gb">Megabytes to Gigabytes</option>
+                <option value="gb-mb">Gigabytes to Megabytes</option>
+                <option value="gb-tb">Gigabytes to Terabytes</option>
+                <option value="tb-gb">Terabytes to Gigabytes</option>
+                <option value="tb-pb">Terabytes to Petabytes</option>
+                <option value="pb-tb">Petabytes to Terabytes</option>
+            </select>
+        </div>
+
+        <!-- <button id="convert-btn" onclick="convertData()">Convert</button> -->
+
+        <div class="calculator-keys">
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button id="clear" onclick="clearInput()">AC</button> <!-- AC button spans 2 rows -->
+        
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button id="backspace" onclick="deleteLast()">⌫</button> <!-- Backspace button spans 2 rows -->
+        
+            <button onclick="appendNumber('00')">00</button>
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="appendDot()">.</button>
+        </div>
+    </div>
+
+    <script src="data_script.js"></script>
+</body>
+</html>

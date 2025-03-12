@@ -1,0 +1,123 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgb(0, 57, 243) 0%, rgb(14, 14, 14) 100%);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Date Container */
+.date-container {
+    width: 320px;
+    padding: 20px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Back Button */
+.back-button {
+    background: #e0e1e6;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Date Heading - Positioned on Top Right */
+.date-heading {
+    font-size: 1.5rem;
+    color: #333;
+    position: absolute;
+    right: 150px;
+    top: 10px;
+}
+
+/* Input Sections */
+.date-inputs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.date-inputs label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+}
+
+.date-inputs input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+/* Difference Box */
+.difference-box {
+    background: #fff3e0;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    margin-top: 15px;
+}
+
+.difference-box h3 {
+    color: #ff9800;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Difference Values */
+.diff-values {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottom Section */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.bottom-section span {
+    color: #f68b1f;
+}

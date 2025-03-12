@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Converter</title>
+    <link rel="stylesheet" href="speed_style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header-container">
+            <button onclick="goBack()" class="back-button" title="Back">←</button>
+        </div>
+        <h2 class="header-title" style="text-align: center;">Speed</h2>
+
+        <input type="text" id="speedInput" class="calculator-screen" placeholder="0" oninput="convertSpeed()">
+        
+        
+        <div class="total" id="speedResult">0</div>
+
+        <div class="switch-container">
+            <button id="switch-btn" onclick="switchConversion()">⇅</button>
+            <select id="conversionType" onchange="convertSpeed()">
+                <option value="kmh-ms">Kilometers kmh to Meters ms</option>
+                <option value="ms-kmh">Meters ms to Kilometers kmh</option>
+                <option value="mph-kmh">Miles mph to Kilometers kmh</option>
+                <option value="kmh-mph">Kilometers kmh to Miles mph</option>
+                <option value="knots-kmh">Knots to Kilometers kmh</option>
+                <option value="kmh-knots">Kilometers kmh to Knots</option>
+            </select>
+        </div>
+
+        <!-- <button id="convert-btn" onclick="convertSpeed()">Convert</button> -->
+
+       
+
+        <div class="calculator-keys">
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button id="clear" onclick="clearInput()">AC</button> <!-- AC button spans 2 rows -->
+        
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button id="backspace" onclick="deleteLast()">⌫</button> <!-- Backspace button spans 2 rows -->
+        
+            <button onclick="appendNumber('00')">00</button>
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="appendDot()">.</button>
+        </div>
+    </div>
+
+    <script src="speed_script.js"></script>
+</body>
+</html>

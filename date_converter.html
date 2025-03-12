@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Converter</title>
+    <link rel="stylesheet" href="date_style.css">
+</head>
+<body>
+    <div class="date-container">
+        <div class="header">
+            <button onclick="goBack()" class="back-button" title="Back">←</button>
+            
+        </div>
+        <h2 style="text-align: center;">Date</h2>
+
+        <div class="date-inputs">
+            <label>From</label>
+            <input type="date" id="fromDate" onchange="calculateDifference()">
+        </div>
+
+        <div class="date-inputs">
+            <label>To</label>
+            <input type="date" id="toDate" onchange="calculateDifference()">
+        </div>
+
+        <div class="difference-box">
+            <h3>Difference</h3>
+            <div class="diff-values">
+                <div>
+                    <h4>Years</h4>
+                    <p id="years">0</p>
+                </div>
+                <div>
+                    <h4>Months</h4>
+                    <p id="months">0</p>
+                </div>
+                <div>
+                    <h4>Days</h4>
+                    <p id="days">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div>
+                <h4>From</h4>
+                <p id="fromDateDisplay">-</p>
+            </div>
+            <div>
+                <h4>To</h4>
+                <p id="toDateDisplay">-</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="date_script.js"></script>
+</body>
+</html>
