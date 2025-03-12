@@ -22,6 +22,7 @@ You have two options to access the files:
 2. Access the files directly from the main branch where they are uploaded individually.
 </pre>
 
+## File Structure
 ```HTML, CSS & JS
 ├── Calculator_Web_App
 │   ├── index.html  
@@ -37,12 +38,13 @@ You have two options to access the files:
  ```
 
 ## Prerequisites
- 
  Make sure you have the following installed:
- 
  1. Visual Studio Code or Windsurf or Edit Plus
 
-# Images
+## Technologies Used
+HTMl, CSS and JS
+
+# Interfaces of Calculator_App
 ## Calculator Home Page
 ![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Calculater_Home_Screen.png)
 
@@ -50,7 +52,7 @@ You have two options to access the files:
 ![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Calculater_with_History.png)
 
 ## All-in-Conversion page
-![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Converter_Page.png)
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Convertor.png)
 
 ## Date Page
 ![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Date.png)
@@ -76,16 +78,15 @@ You have two options to access the files:
 ## Discount Page
 ![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Discount.png)
 
-
-
-
-
-
-
-
-
-
-
+# License
+ 
+ This project is licensed under the MIT License.
+ 
+# Contributing
+ 
+ Feel free to submit issues or pull requests to improve this project.
+ 
+ Made with ❤️ by [HemanthSai Burla](https://www.linkedin.com/in/hemanthsaiburla/)
 
 
 
