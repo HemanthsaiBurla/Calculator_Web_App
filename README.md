@@ -1,7 +1,8 @@
 # Calculator_Web_App
-🔹 𝗔𝗹𝗹-𝗶𝗻-𝗢𝗻𝗲 𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻 & 𝗖𝗮𝗹𝗰𝘂𝗹𝗮𝘁𝗼𝗿 𝗪𝗲𝗯 𝗔𝗽𝗽
+𝗔𝗹𝗹-𝗶𝗻-𝗢𝗻𝗲 𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻 & 𝗖𝗮𝗹𝗰𝘂𝗹𝗮𝘁𝗼𝗿 𝗪𝗲𝗯 𝗔𝗽𝗽
 A dynamic, user-friendly web application built using HTML, CSS, and JavaScript, offering multiple calculators and converters for seamless, real-time computations.
 <br>
+
 🌟 𝗞𝗲𝘆 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:
 <pre>
 ✅ Real-Time Conversions (Speed, Length, Time, Temperature, Discount)
@@ -20,3 +21,75 @@ You have two options to access the files:
 1. Navigate to the calculator_web_app folder to view all files in an organized manner.
 2. Access the files directly from the main branch where they are uploaded individually.
 </pre>
+
+```HTML, CSS & JS
+├── Calculator_Web_App
+│   ├── index.html  
+│   ├── style.css  
+│   ├── script.js
+│   └── other all files
+├── README.md  
+├── LICENSE  
+├── index.html
+├── style.css
+├── script.js
+└── other all files
+ ```
+
+## Prerequisites
+ 
+ Make sure you have the following installed:
+ 
+ 1. Visual Studio Code or Windsurf or Edit Plus
+
+# Images
+## Calculator Home Page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Calculater_Home_Screen.png)
+
+## History Page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Calculater_with_History.png)
+
+## All-in-Conversion page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Converter_Page.png)
+
+## Date Page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Date.png)
+
+## Length
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Length.png)
+
+## Time Page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Time.png)
+
+## Speed Page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Speed.png)
+
+## Mass Page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Mass.png)
+
+## Data Page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Data.png)
+
+## Temperature Page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Temperature.png)
+
+## Discount Page
+![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Discount.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
