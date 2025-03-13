@@ -2,22 +2,18 @@
 𝗔𝗹𝗹-𝗶𝗻-𝗢𝗻𝗲 𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻 & 𝗖𝗮𝗹𝗰𝘂𝗹𝗮𝘁𝗼𝗿 𝗪𝗲𝗯 𝗔𝗽𝗽
 A dynamic, user-friendly web application built using HTML, CSS, and JavaScript, offering multiple calculators and converters for seamless, real-time computations.
 <br>
-
-## Attention : Want to checkout this project in live? here you go!
-[Click here: Calculator](https://hemanthsaiburla.github.io/Calculator_Web_App/)
-
-
-🌟 𝗞𝗲𝘆 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:
+<br>
+🚀 Live Demo
+[Check out the live Calculator here](https://hemanthsaiburla.github.io/Calculator_Web_App/)
+## 🔥 Key Features:
 <pre>
 ✅ Real-Time Conversions (Speed, Length, Time, Temperature, Discount)
 ✅ Dynamic Calculation with auto-update on input changes
 ✅ Intuitive UI with number pads, switch buttons, and backspace support
 ✅ History Tracking (Last 5 calculations in the calculator)
 ✅ Navigation Support (Back to main menu with ease)
-✅ Validation-Handled Inputs (Prevents invalid entries like multiple dots)</pre>
-
-A perfect tool for quick calculations and unit conversions, designed for simplicity and efficiency.
-<br>
+✅ Validation-Handled Inputs (Prevents invalid entries like multiple dots)
+</pre>
 <h3>Info to access files</h3>
 🔹 All files are uploaded into one folder for better organization. However, the project files are also available directly in the main branch.<br>
 You have two options to access the files:
@@ -43,7 +39,7 @@ You have two options to access the files:
 
 ## Prerequisites
  Make sure you have the following installed:
- 1. Visual Studio Code or Windsurf or Edit Plus
+ 1. Visual Studio Code or Windsurf or Edit Plus etc.
 
 ## Technologies Used
 HTMl, CSS and JS
