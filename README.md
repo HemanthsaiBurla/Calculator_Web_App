@@ -10,7 +10,7 @@ A dynamic, user-friendly web application built using HTML, CSS, and JavaScript, 
 ✅ Real-Time Conversions (Speed, Length, Time, Temperature, Discount)
 ✅ Dynamic Calculation with auto-update on input changes
 ✅ Intuitive UI with number pads, switch buttons, and backspace support
-✅ History Tracking (Last 5 calculations in the calculator)
+✅ History Tracking (Last 5 or Upto min 0-100* max 1000* calculations in the calculator)
 ✅ Navigation Support (Back to main menu with ease)
 ✅ Validation-Handled Inputs (Prevents invalid entries like multiple dots)
 </pre>
