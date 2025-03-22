@@ -44,7 +44,7 @@ You have two options to access the files:
 ## Technologies Used
 HTMl, CSS and JS
 
-# Interfaces of Calculator_App
+# Interfaces(or) UI of Calculator_App
 ## Calculator Home Page
 ![image alt](https://github.com/HemanthsaiBurla/Calculator_Web_App/blob/main/Calculator_Images/Calculater_Home_Screen.png)
 
