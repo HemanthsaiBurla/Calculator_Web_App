@@ -37,7 +37,7 @@ You have two options to access the files:
 └── other all files
  ```
 
-## Prerequisites
+## 🛠️ Tech Stack Used:
  Make sure you have the following installed:
  1. Visual Studio Code or Windsurf or Edit Plus etc.
 
